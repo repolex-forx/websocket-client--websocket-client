@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/websocket-client/websocket-client/commit/318d1bc3b8de4b1dc2c9ea49d4b4825d200cff13",
       "git:hexsha": "318d1bc3b8de4b1dc2c9ea49d4b4825d200cff13",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-18T09:04:52.465446+00:00"
     },
     {
       "@id": "https://repolex.ai/r/websocket-client/websocket-client/commit/7573c84a52f14aff26eb25df6af9da677fa77703",
