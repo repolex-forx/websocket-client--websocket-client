@@ -1,0 +1,11 @@
+{
+  "org": "websocket-client",
+  "repo": "websocket-client",
+  "versions": [
+    {
+      "commit": "318d1bc3b8de4b1dc2c9ea49d4b4825d200cff13",
+      "tag": "",
+      "parsed_at": "2026-10-18T09:04:52.550892+00:00"
+    }
+  ]
+}

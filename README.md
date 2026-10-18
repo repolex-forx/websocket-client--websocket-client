@@ -1,1 +1,158 @@
-Initializing
+# Repolex Knowledge Graph of websocket-client/websocket-client
+
+RDF knowledge graph data for [websocket-client/websocket-client](https://github.com/websocket-client/websocket-client), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download websocket-client/websocket-client
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 318d1bc3b8de4b1dc2c9ea49d4b4825d200cff13
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 318d1bc3b8de4b1dc2c9ea49d4b4825d200cff13
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0345b552c18900b91cb78f7e116a2922a728e0d1.nq.gz
+│   ├── 047244a5362c287b772d005efd74c81a46f517ce.nq.gz
+│   ├── 04d3adce142fb2d0e44af569dd0a4b0701a0f68f.nq.gz
+│   ├── 05370bc33b3488367b1e658de5a1acaa7c4ca3c1.nq.gz
+│   ├── 069f5f4cb19bd92bdc61e44bc932e86a9037366e.nq.gz
+│   ├── 091c84c694b5531c7809bf5fb1d3d3a3857150a1.nq.gz
+│   ├── 0f0edbdcacb8d59c43ea5034834d8711adae60b5.nq.gz
+│   ├── 0f59d120c63922e4f4f063ee79c4ed3f36fcd8e0.nq.gz
+│   ├── 133fd67de5056c4a0a3db2b137954b5fcdf9c5a7.nq.gz
+│   ├── 1454612e5a6292c51279ccb0e610465e183dd730.nq.gz
+│   ├── 16b376edd014a9531377a1840662115de3f26adb.nq.gz
+│   ├── 1a81dc70ce5952e94e0bacd896ed600784d6d505.nq.gz
+│   ├── 1e15c706909643556fa3a931db3640fffe7b343c.nq.gz
+│   ├── 28846d442fa5a2957e06cf9bf4c77bd160a089a3.nq.gz
+│   ├── 2ac88aa8783162ec891fca50d0cc8639c68978a6.nq.gz
+│   ├── 2c0687db77a32257255bde46f427642f2c603bc3.nq.gz
+│   ├── 3142b43b303e3601170246c77215b4c7c0053b35.nq.gz
+│   ├── 318a6e12822e24e751ea64ccb28b3f60cae9b303.nq.gz
+│   ├── 32bb4e90dcc0d31ed718ba10968fa43caacde1da.nq.gz
+│   ├── 3365a34d3ce5e88db3e1fe45409832a58aab54a3.nq.gz
+│   ├── 3456ca00521d6f0b6609cfa4c470c13fd6131410.nq.gz
+│   ├── 3aa97f08542118e1539479ecf989e0d4aef9b799.nq.gz
+│   ├── 41e65da5631beb2a0306fb6a319bec6f40c8ad74.nq.gz
+│   ├── 424a6f04e75b1181b986bacd05b7958bcd676420.nq.gz
+│   ├── 4553cc6217900963dbf38234f53255733d56dfe1.nq.gz
+│   ├── 46cc1d7ee439c3e8484661c8677c993a5789a11c.nq.gz
+│   ├── 48fbb2c5d5fa8ac42538d27fb829b8bad3770764.nq.gz
+│   ├── 4f5d4b22c1cef8d637f5e7553d47c8fa1306de25.nq.gz
+│   ├── 5047c29ee48ec10052a550ff6c535e0b1a8e9835.nq.gz
+│   ├── 54d6bcfb313bd1f94b4e09b47e7550e6a31defd1.nq.gz
+│   ├── 5d1e87087b63663f9f240d7b34f521e34372073e.nq.gz
+│   ├── 5ee2135277adc9b1d6231cb95582ae254565c060.nq.gz
+│   ├── 5f027d2857d86f0cb1713f86c9a98af198089cf4.nq.gz
+│   ├── 6247f7e231716482115f34084ac61030743e0715.nq.gz
+│   ├── 6341b0e1185aee1445b03479742e5fed4ecdb5b7.nq.gz
+│   ├── 660b4a85282c904450e531be38d7947b0139b386.nq.gz
+│   ├── 6a2c48d6b7783e1d18240c697988c72a3b88419d.nq.gz
+│   ├── 6c46f7f4d20964e19ee1aa02b8c1649de1b401dd.nq.gz
+│   ├── 6d4f4c080e74be42d2c57bc41a0659f1ca531d05.nq.gz
+│   ├── 755d385d8499b8a2b4a3fed6a46f8a19fdca71af.nq.gz
+│   ├── 7b43430ce1aeb7e11cffd6047695e1c85e579312.nq.gz
+│   ├── 7ee794e1d2dd3a8f19cc5be263e370d026e0b09f.nq.gz
+│   ├── 7f75bb2cb15abd764ce8fbf1559123ba58157ac2.nq.gz
+│   ├── 86a5343d0d79e4dc560a3ba9ac13b8f488bfd12f.nq.gz
+│   ├── 884a9d9693ff5fdcf1708e4570f4563a6c0a95e4.nq.gz
+│   ├── 8cfab1774da5764b51687a0444d0e913cfc7dd39.nq.gz
+│   ├── 9761bdf19939bfa4eb573727714a7af16831178b.nq.gz
+│   ├── 9875e3403e229c43fea1408942604e79568d56e9.nq.gz
+│   ├── 98a01b79645d98af500808fa666c51845e124502.nq.gz
+│   ├── 9a34037945084b97c02320c4fe8f73fb898baac0.nq.gz
+│   ├── 9be9f2bff8747c2715f2e1e50bbc3697805592d9.nq.gz
+│   ├── 9fbe388c185d8b39e42d15d97d6848c3c712ca23.nq.gz
+│   ├── a196add80a77675838b2cf0c0289024c2e1b7887.nq.gz
+│   ├── a48e181275caa4e890582d715345c263663242c7.nq.gz
+│   ├── a616f8160866a4be8e0f5d401e2254ec28baabb3.nq.gz
+│   ├── a9dd2ce3e397bff94682555248cd6b169a7d071b.nq.gz
+│   ├── ac4a191062fa179d957ae958213da1f316a959ac.nq.gz
+│   ├── b30bf3420c1366fa36e03d6a4012a76ed8e04665.nq.gz
+│   ├── c3c9d23bfabb48d91ed55ef44c806329cdd0e5e7.nq.gz
+│   ├── c45aa764e617e4f4423c82c274ac9df895015ef1.nq.gz
+│   ├── c83a7f007c85b59dae86db703f2db1d483e0daff.nq.gz
+│   ├── c91c730c93922b6c89b80ed18768347fca749d18.nq.gz
+│   ├── c9cfaca6cf8760d72810dba4bec48e1ed79e73f6.nq.gz
+│   ├── cc0612fff8ffc11d658860f02aa084e549440c44.nq.gz
+│   ├── cf9a19f70ae7838cfbc7bf7aaf7e6058807a9890.nq.gz
+│   ├── d0c3cbf1020d5c292abdedf27627c6abe25e2293.nq.gz
+│   ├── d0fdcdd7be8fb86103a8a313f5507bfaf0791cd4.nq.gz
+│   ├── d58533908bf4003c0c20f9c67870e562e92429e1.nq.gz
+│   ├── dd8ec3f102e5410a4177164269ceae9dac51ac1b.nq.gz
+│   ├── dece69241f64ff1a38d44e67994b60fa455a8597.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── e7235a75e7e030d83e2d6e4baf17955e7031a9e8.nq.gz
+│   ├── e8c29834a54583e974e34083967e16d3bf623fd3.nq.gz
+│   ├── ea73bc0ac3cf600480bdb71266401b766deb52c5.nq.gz
+│   ├── f06126a720117e3ba0919d67e96d737068b5ecf6.nq.gz
+│   ├── f09aa1788034cdeac30714008eeb415df353faf0.nq.gz
+│   ├── f23fc5f5790648dc16581078892fdd74ddc7dbef.nq.gz
+│   ├── fa2cad3ad4ce1341dc35562941e2fca2f2f7c650.nq.gz
+│   └── fabfc602c83e0bb4145117f39763d43da92551ce.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 318d1bc3b8de4b1dc2c9ea49d4b4825d200cff13.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 87 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[websocket-client/websocket-client](https://github.com/websocket-client/websocket-client)
+
+---
+*Parsed on 2026-10-18 by [repolex](https://repolex.ai)*
